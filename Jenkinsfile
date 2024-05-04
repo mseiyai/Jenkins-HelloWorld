@@ -28,7 +28,7 @@ podTemplate(yaml: '''
               path: config.json
 ''') {
   node(POD_LABEL) {
-    stage('Get Simple Hello World App') {
+    stage('Get Simple  Hello World App') {
       checkout scm
       container('maven') {
         stage('Test Hello World App') {
